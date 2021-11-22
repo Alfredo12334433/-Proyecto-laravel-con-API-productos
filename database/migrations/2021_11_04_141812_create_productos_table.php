@@ -20,7 +20,7 @@ class CreateProductosTable extends Migration
             $table->decimal('precio_unitario',10,2);
             $table->string('fotografia',45);
             $table->tinyText('descripcion');
-            $table->enum('estatus',['Activo, Inactivo']);
+            $table->enum('estatus',['Activo', 'Inactivo']);
             $table->decimal('tasa_iva',10,2);
             $table->timestamps();
         });
