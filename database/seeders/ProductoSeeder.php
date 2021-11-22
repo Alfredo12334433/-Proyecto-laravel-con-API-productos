@@ -26,6 +26,17 @@ class ProductoSeeder extends Seeder
                 , 'created_at' => '2021-11-18 07:22'
                 , 'updated_at' => '2021-11-18 07:22'
             ]
+            ,   [
+                'producto' => 'Leche deslactosada 1.5Lt'
+                , 'existencias' => 56
+                , 'precio_unitario' => 32 
+                , 'fotografia' => 'leche.jpg'
+                , 'descripcion' => 'Leche deslactosada 100% origen animal'
+                , 'estatus' => 'Activo'
+                , 'tasa_iva' => 16
+                , 'created_at' => '2021-11-18 07:22'
+                , 'updated_at' => '2021-11-18 07:22'
+            ]
         ]);
         
     }
