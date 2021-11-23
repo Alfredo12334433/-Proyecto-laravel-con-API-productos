@@ -38,7 +38,10 @@ class ProductoController extends Controller
      */
     public function store(StoreProductoRequest $request)
     {
-        //
+        
+        $request->validate(Producto::reglas());
+        Producto::insert($reques->all());
+        return response()->json(['estatus' => true]);
     }
 
     /**
@@ -49,7 +52,7 @@ class ProductoController extends Controller
      */
     public function show(Producto $producto)
     {
-        //
+        return response()->json($producto);
     }
 
     /**

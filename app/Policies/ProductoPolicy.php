@@ -41,7 +41,7 @@ class ProductoPolicy
      */
     public function create(User $user)
     {
-        //
+        return true;
     }
 
     /**
